@@ -1,0 +1,28 @@
+﻿@model IEnumerable<SignalRDbUpdates.Models.Messages>
+
+<p>
+</p>
+<table class="table">
+    <tr>
+        <th>@Html.DisplayNameFor(model => model.Id)</th>
+        <th>
+            @Html.DisplayNameFor(model => model.Message)
+        </th>
+        
+        
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Message)
+        </td>
+        
+        
+    </tr>
+}
+
+</table>
